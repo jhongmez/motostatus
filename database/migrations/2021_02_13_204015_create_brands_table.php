@@ -20,7 +20,7 @@ class CreateBrandsTable extends Migration
             $table->string('name');
             $table->string('image')->default('imgs/no-brand.png');
             $table->text('description');
-            $table->boolean('activo');
+            $table->boolean('activo')->default(1);
 
             $table->timestamps();
         });

@@ -19,7 +19,7 @@ class CreateTiresTable extends Migration
             // Campos
             $table->string('name');
             $table->text('description');
-            $table->boolean('activo');
+            $table->boolean('activo')->default(1);
 
             $table->timestamps();
         });
