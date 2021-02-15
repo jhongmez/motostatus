@@ -10948,6 +10948,10 @@ a.text-dark:focus {
   background-color: #4d375d;
 }
 
+.bg-motostatus-dark {
+  background-color: #121013;
+}
+
 .color-motostatus {
   color: #4d375d;
 }
