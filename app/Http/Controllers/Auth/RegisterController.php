@@ -48,7 +48,8 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
-    {
+    {   
+        // Valida el registro del usuario
         return Validator::make($data, [
             'name'      => ['required', 'string'],
             'surname'   => ['required', 'string'],
@@ -65,10 +66,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // Saber si llegaron los datos 
+        //dd($data);
+
+        // Crea el usuario
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'name'      => $data['name'],
+            'surname'   => $data['surname'],
+            'email'     => $data['email'],
+            'password'  => Hash::make($data['password']),
         ]);
     }
 }
