@@ -49,13 +49,31 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {   
+
+        if(session()->get('locale') == 'es') {
+            $messages = array(
+                'name.required'         => 'El campo "Nombre" es Obligatorio.',
+                'surname.required'      => 'El campo "Apellido" es Obligatorio.',
+                'email.required'        => 'El campo "Correo" es Obligatorio.',
+                'password.required'     => 'El campo "Contraseña" es Obligatorio.',
+            );
+        }
+        else {
+            $messages = array(
+                'name.required'         => 'El campo "Nombre" es Obligatorio.',
+                'surname.required'      => 'El campo "Apellido" es Obligatorio.',
+                'email.required'        => 'El campo "Correo" es Obligatorio.',
+                'password.required'     => 'El campo "Contraseña" es Obligatorio.',
+            );
+        }
+
         // Valida el registro del usuario
         return Validator::make($data, [
-            'name'      => ['required', 'string'],
-            'surname'   => ['required', 'string'],
-            'email'     => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password'  => ['required', 'string', 'min:6', 'confirmed'],
-        ]);
+            'name'          => ['required'],
+            'surname'       => ['required'],
+            'email'         => ['required', 'email', 'unique:users'],
+            'password'      => ['required', 'min:6', 'confirmed'],
+        ], $messages);
     }
 
     /**

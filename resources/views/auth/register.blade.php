@@ -9,7 +9,7 @@
                 {{ __('general.title-register') }}
             </h4>
 
-            @if($errors->any())
+            {{-- @if($errors->any())
                     
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     @foreach ($errors->all() as $message)
@@ -22,7 +22,7 @@
                     </button>
                 </div>
 
-            @endif
+            @endif --}}
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -82,8 +82,8 @@
                 </div>
 
                 <div class="form-group mb-0">
-                    <div class="col-md-6 offset-md-4">
-                        <button type="submit" class="btn btn-primary">
+                    <div class="col-6 offset-3">
+                        <button type="submit" class="btn btn-link btn-block">
                             {{ __('general.create-account') }}
                         </button>
                     </div>

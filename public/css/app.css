@@ -10944,3 +10944,23 @@ a.text-dark:focus {
   }
 }
 
+.bg-motostatus {
+  background-color: #4d375d;
+}
+
+.color-motostatus {
+  color: #4d375d;
+}
+
+.btn-link {
+  background-color: #eb596e;
+  color: #FFF;
+  border-color: #eb596e;
+}
+
+.btn-link:hover {
+  background-color: #eb596e;
+  color: #FFF;
+  border-color: #eb596e;
+}
+
