@@ -19,7 +19,7 @@ class MotorcycleSeeder extends Seeder
                 'model'             => 2019,
                 'soatDate'          => 20200101,
                 'taxes'             => 1,
-                'taxesDate'         => 20290505,
+                'taxesDate'         => 20200505,
                 'mechanicsDate'     => 20210115,
                 'tiresDate'         => 20201224,
                 'brakesDate'        => 20200920,
@@ -31,6 +31,7 @@ class MotorcycleSeeder extends Seeder
                 'tire_id'           => 3,
                 'brake_id'          => 3,
                 'oil_id'            => 1,
+                'created_at'        => now()
             ]
         ]);
 

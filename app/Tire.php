@@ -16,4 +16,8 @@ class Tire extends Model
         'description',
         'activo',
     ];
+
+    public function motorcycles() {
+        return $this->hasMany('App\Motorcycle');
+    }
 }

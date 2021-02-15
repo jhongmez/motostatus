@@ -18,4 +18,9 @@ class Brand extends Model
         'activo',
     ];
 
+    public function motorcycles() {
+        return $this->hasMany('App\Motorcycle');
+    }
+    
+
 }
