@@ -41,7 +41,23 @@
                     confirmButtonText: 'Aceptar'
                 });
             @endif
-
+            
+            $('.btn-delete').click(function(event) {
+                Swal.fire({
+                    title: 'Esta usted seguro ?',
+                    text: 'Desea eliminar este registro',
+                    icon: 'error',
+                    showCancelButton: true,
+                    cancelButtonColor: '#d0211c',
+                    cancelButtonText: 'Cancelar',
+                    confirmButtonColor: '#1e5f74',
+                    confirmButtonText: 'Aceptar',  
+                }).then((result) => {
+                    if(result.value) {
+                        $(this).parent().submit();
+                    }
+                });
+            });
         });
     </script>
 </body>

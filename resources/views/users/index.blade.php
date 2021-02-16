@@ -36,9 +36,13 @@
                                 <a href="{{ url('users/'.$user->id.'/edit') }}" class="btn btn-sm btn-motostatus-info">
                                     <i class="fa fa-pen"></i>
                                 </a>
-                                <a href="" class="btn btn-sm btn-link">
-                                    <i class="fa fa-trash"></i>
-                                </a>
+                                <form action="{{ url('users/'.$user->id) }}" method="POST" class="d-inline">
+                                    @csrf
+									@method('delete')
+                                    <button type="button" class="btn btn-sm btn-link btn-delete">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
