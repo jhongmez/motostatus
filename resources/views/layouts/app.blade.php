@@ -27,6 +27,22 @@
     </main>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/sweetalert2@9.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+
+            @if (session('message'))
+                Swal.fire({
+                    title: 'Felicitaciones',
+                    text: '{{ session('message') }}',
+                    icon: 'success',
+                    confirmButtonColor: '#eb596e',
+                    confirmButtonText: 'Aceptar'
+                });
+            @endif
+
+        });
+    </script>
 </body>
 </html>
