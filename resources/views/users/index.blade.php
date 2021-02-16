@@ -1,0 +1,50 @@
+@extends('layouts.app')
+
+@section('title', 'Lista de usuarios')
+
+@section('content')
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h1>
+                <i class="fa fa-users"></i> Lista de usuarios
+            </h1>
+            <hr>
+            <div class="d-flex justify-content-center">
+                <a href="{{ url('users/create') }}" class="btn btn-success">
+                    <i class="fa fa-plus"></i>
+                    Agregar
+                </a>
+            </div>
+            <table class="table table-striped my-4">
+                <thead>
+                    <tr>
+                        <th class="d-none d-sm-table-cell">Nombre</th>
+                        <th>Email</th>
+                        <th>Opcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($users as $user)
+                        <tr>
+                            <td class="d-none d-sm-table-cell">{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>
+                                <a href="" class="btn btn-sm btn-motostatus-info">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="btn btn-sm btn-motostatus-info">
+                                    <i class="fa fa-pen"></i>
+                                </a>
+                                <a href="" class="btn btn-sm btn-link">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+@endsection

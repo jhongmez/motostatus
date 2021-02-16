@@ -10968,3 +10968,15 @@ a.text-dark:focus {
   border-color: #eb596e;
 }
 
+.btn-motostatus-info {
+  background-color: #ffe227;
+  color: #121013;
+  border-color: #ffe227;
+}
+
+.btn-motostatus-info:hover {
+  background-color: #ffe227;
+  color: #121013;
+  border-color: #ffe227;
+}
+
