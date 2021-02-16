@@ -31,6 +31,18 @@
     }
 }
 
+ul.pagination {
+	justify-content: center;
+	.page-item.active .page-link {
+		background-color: #4d375d;
+		border-color: #FFF;
+		color: rgba(255,255,255,.8);
+	}
+	.page-item .page-link {
+		color: #4d375d;
+	}
+}
+
 // Yellow ffe227
 // Dark 121013
 // Red eb596e

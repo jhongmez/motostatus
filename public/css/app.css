@@ -10980,3 +10980,17 @@ a.text-dark:focus {
   border-color: #ffe227;
 }
 
+ul.pagination {
+  justify-content: center;
+}
+
+ul.pagination .page-item.active .page-link {
+  background-color: #4d375d;
+  border-color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+ul.pagination .page-item .page-link {
+  color: #4d375d;
+}
+
