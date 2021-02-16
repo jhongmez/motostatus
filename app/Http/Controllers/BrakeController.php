@@ -103,8 +103,10 @@ class BrakeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Brake $brake)
     {
-        //
+        if($brake->delete()) {
+            return redirect('brakes')->with('message', 'Los frenos: '.$brake->name.' fue Eliminado con Exito!');
+        } 
     }
 }
