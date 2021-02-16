@@ -62,8 +62,8 @@ class BrakeController extends Controller
      */
     public function show(Brake $brake)
     {
-        dd($brake);
-        // return view('brakes.show')->with('brake', $brake);
+        // dd($brake);
+        return view('brakes.show')->with('brake', $brake);
     }
 
     /**
