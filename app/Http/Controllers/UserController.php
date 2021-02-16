@@ -74,9 +74,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        // dd($user);
+        return view('users.edit')->with('user', $user);
     }
 
     /**
@@ -86,9 +87,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        //dd( $request->all() );
+        $user->name         = $request->name;
+        $user->surname      = $request->surname;
+        $user->email        = $request->email;
+
+        if($user->save()) {
+            return redirect('users')->with('message', 'El Usuario: '.$user->name.' fue Modificado con Exito!');
+        } 
     }
 
     /**

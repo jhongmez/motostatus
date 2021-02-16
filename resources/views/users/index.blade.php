@@ -33,7 +33,7 @@
                                 <a href="{{ url('users/'.$user->id) }}" class="btn btn-sm btn-motostatus-info">
                                     <i class="fa fa-search"></i>
                                 </a>
-                                <a href="" class="btn btn-sm btn-motostatus-info">
+                                <a href="{{ url('users/'.$user->id.'/edit') }}" class="btn btn-sm btn-motostatus-info">
                                     <i class="fa fa-pen"></i>
                                 </a>
                                 <a href="" class="btn btn-sm btn-link">
