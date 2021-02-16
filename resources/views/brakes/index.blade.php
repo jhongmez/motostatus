@@ -36,7 +36,7 @@
                             <a href="{{ url('brakes/'.$brake->id) }}" class="btn btn-sm btn-motostatus-info">
                                 <i class="fa fa-search"></i>
                             </a>
-                            <a href="" class="btn btn-sm btn-motostatus-info">
+                            <a href="{{ url('brakes/'.$brake->id.'/edit') }}" class="btn btn-sm btn-motostatus-info">
                                 <i class="fa fa-pen"></i>
                             </a>
                             <a href="" class="btn btn-sm btn-danger">

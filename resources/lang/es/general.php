@@ -20,6 +20,9 @@ return [
     'name-brakes'       => 'Frenos',
     'description'       => 'Descripcion',
     'active'            => 'Activo',
+    'inactive'          => 'Inactivo',
     'create-brakes'     => 'Crear frenos',
+    'edit-brake'        => 'Editar frenos',
+
 
 ];

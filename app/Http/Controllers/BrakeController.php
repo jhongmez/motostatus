@@ -72,9 +72,10 @@ class BrakeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Brake $brake)
     {
-        //
+        //dd($brake);
+        return view('brakes.edit')->with('brake', $brake);
     }
 
     /**
@@ -84,9 +85,16 @@ class BrakeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BrakeRequest $request, Brake $brake)
     {
         //
+        $brake->name            = $request->name;
+        $brake->description     = $request->description;
+        $brake->activo          = $request->activo;
+
+        if($brake->save()) {
+            return redirect('brakes')->with('message', 'Los frenos: '.$brake->name.' fueron Modificados con Exito!');
+        } 
     }
 
     /**
