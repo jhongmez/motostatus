@@ -15,6 +15,11 @@ return [
     'password-confirm'  => 'Confirmar contraseña',
     'create-account'    => 'Crear cuenta',
     'create-user'       => 'Crear usuario',
-    'edit-user'         => 'Editar usuario'
+    'edit-user'         => 'Editar usuario',
+
+    'name-brakes'       => 'Frenos',
+    'description'       => 'Descripcion',
+    'active'            => 'Activo',
+    'create-brakes'     => 'Crear frenos',
 
 ];

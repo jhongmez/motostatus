@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Brake;
 use Illuminate\Http\Request;
+use App\Http\Requests\BrakeRequest;
 
 class BrakeController extends Controller
 {   
@@ -32,6 +33,7 @@ class BrakeController extends Controller
     public function create()
     {
         //
+        return view('brakes.create');
     }
 
     /**
@@ -40,9 +42,16 @@ class BrakeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BrakeRequest $request)
     {
-        //
+        //dd( $request->all() );
+        $brake = new Brake;
+        $brake->name         = $request->name;
+        $brake->description  = $request->description;
+
+        if ( $brake->save() ) {
+            return redirect('brakes')->with('message', 'Los frenos: '.$brake->name.' fueron agregados!');
+        }
     }
 
     /**
@@ -51,9 +60,10 @@ class BrakeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Brake $brake)
     {
-        //
+        dd($brake);
+        // return view('brakes.show')->with('brake', $brake);
     }
 
     /**
