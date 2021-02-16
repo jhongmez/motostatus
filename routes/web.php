@@ -23,8 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resources([
     'users'          => 'UserController',
+    'brakes'         => 'BrakeController',
     // 'brands'         => 'BrandController',
-    // 'brakes'         => 'BrakeController',
     // 'mechanics'      => 'MechanicController',
     // 'oils'           => 'OilController',
     // 'soats'          => 'SoatController',
