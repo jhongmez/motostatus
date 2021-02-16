@@ -14,5 +14,6 @@ return [
     'password'          => 'Contraseña',
     'password-confirm'  => 'Confirmar contraseña',
     'create-account'    => 'Crear cuenta',
+    'create-user'       => 'Crear usuario'
 
 ];
