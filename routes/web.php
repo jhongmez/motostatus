@@ -17,10 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users', function () {
-    dd(App\User::all());
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resources([
+    'users'          => 'UserController',
+    // 'brands'         => 'BrandController',
+    // 'brakes'         => 'BrakeController',
+    // 'mechanics'      => 'MechanicController',
+    // 'oils'           => 'OilController',
+    // 'soats'          => 'SoatController',
+    // 'tires'          => 'TireController',
+    // 'motorcycles'    => 'MotorcycleController',
+]);
+
+

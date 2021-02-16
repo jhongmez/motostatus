@@ -16,7 +16,7 @@
                     Agregar
                 </a>
             </div>
-            <table class="table table-striped my-4">
+            <table class="table table-striped my-5">
                 <thead>
                     <tr>
                         <th class="d-none d-sm-table-cell">Nombre</th>
@@ -30,7 +30,7 @@
                             <td class="d-none d-sm-table-cell">{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>
-                                <a href="" class="btn btn-sm btn-motostatus-info">
+                                <a href="{{ url('users/'.$user->id) }}" class="btn btn-sm btn-motostatus-info">
                                     <i class="fa fa-search"></i>
                                 </a>
                                 <a href="" class="btn btn-sm btn-motostatus-info">
@@ -44,6 +44,9 @@
                     @endforeach
                 </tbody>
             </table>
+            <div class="d-flex justify-content-center">
+                {{ $users->links() }}
+            </div>
         </div>
     </div>
 
