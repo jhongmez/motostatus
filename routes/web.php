@@ -28,7 +28,7 @@ Route::resources([
     'mechanics'      => 'MechanicController',
     'oils'           => 'OilController',
     'soats'          => 'SoatController',
-    // 'tires'          => 'TireController',
+    'tires'          => 'TireController',
     // 'motorcycles'    => 'MotorcycleController',
 ]);
 

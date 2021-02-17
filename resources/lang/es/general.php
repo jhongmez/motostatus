@@ -21,6 +21,7 @@ return [
     'name-cda'          => 'CDA',
     'name-oil'          => 'Aceite',
     'name-soat'         => 'Soat',
+    'name-tire'         => 'Llanta',
     'description'       => 'Descripcion',
     'active'            => 'Activo',
     'inactive'          => 'Inactivo',
@@ -28,10 +29,11 @@ return [
     'create-cda'        => 'Crear CDA',
     'create-oil'        => 'Crear aceite',
     'create-soat'       => 'Crear soat',
+    'create-tire'       => 'Crear llanta',
     'edit-brake'        => 'Editar frenos',
     'edit-cda'          => 'Editar CDA',
     'edit-oil'          => 'Editar aceite',
     'edit-soat'         => 'Editar soat',
-
+    'edit-tire'         => 'Editar llanta',
 
 ];
