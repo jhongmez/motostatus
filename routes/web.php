@@ -25,7 +25,7 @@ Route::resources([
     'users'          => 'UserController',
     'brakes'         => 'BrakeController',
     // 'brands'         => 'BrandController',
-    // 'mechanics'      => 'MechanicController',
+    'mechanics'      => 'MechanicController',
     // 'oils'           => 'OilController',
     // 'soats'          => 'SoatController',
     // 'tires'          => 'TireController',
