@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-6">
             <h1>
-                <i class="fas fa-wrench"></i> Lista de CDA
+                <i class="fas fa-screwdriver"></i> Lista de CDA
             </h1>
 
             <hr>

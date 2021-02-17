@@ -7,16 +7,16 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h1>
-                <i class="fas fa-wrench"></i> Crear CDA
+                <i class="fas fa-screwdriver"></i>Crear CDA
             </h1>
             <hr>
               
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ url('home') }}">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="{{ url('users') }}">CDA</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('mechanics') }}">CDA</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <i class="fas fa-wrench"></i>
+                        <i class="fas fa-screwdriver"></i>
                         Crear CDA
                     </li>
                 </ol>
