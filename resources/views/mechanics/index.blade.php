@@ -13,7 +13,7 @@
             <hr>
             
             <div class="d-flex justify-content-center">
-                <a href="{{ url('brakes/create') }}" class="btn btn-success">
+                <a href="{{ url('mechanics/create') }}" class="btn btn-success">
                     <i class="fa fa-plus"></i>
                     Agregar
                 </a>

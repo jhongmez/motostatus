@@ -18,11 +18,14 @@ return [
     'edit-user'         => 'Editar usuario',
 
     'name-brakes'       => 'Frenos',
+    'name-cda'          => 'CDA',
     'description'       => 'Descripcion',
     'active'            => 'Activo',
     'inactive'          => 'Inactivo',
     'create-brakes'     => 'Crear frenos',
+    'create-cda'        => 'Crear CDA',
     'edit-brake'        => 'Editar frenos',
+    'edit-cda'          => 'Editar CDA',
 
 
 ];
