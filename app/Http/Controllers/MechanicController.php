@@ -61,9 +61,10 @@ class MechanicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Mechanic $mechanic)
     {
         //
+        return view('mechanics.show')->with('mechanic', $mechanic);
     }
 
     /**
@@ -72,9 +73,10 @@ class MechanicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Mechanic $mechanic)
     {
         //
+        return view('mechanics.edit')->with('mechanic', $mechanic);
     }
 
     /**
@@ -84,9 +86,16 @@ class MechanicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(MechanicRequest $request, Mechanic $mechanic)
     {
         //
+        $mechanic->name            = $request->name;
+        $mechanic->description     = $request->description;
+        $mechanic->activo          = $request->activo;
+
+        if($mechanic->save()) {
+            return redirect('mechanics')->with('message', 'El '.$mechanic->name.' fue Modificado con Exito!');
+        } 
     }
 
     /**
@@ -95,8 +104,10 @@ class MechanicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Mechanic $mechanic)
     {
-        //
+        if($mechanic->delete()) {
+            return redirect('mechanics')->with('message', 'El '.$mechanic->name.' fue Eliminado!');
+        } 
     }
 }

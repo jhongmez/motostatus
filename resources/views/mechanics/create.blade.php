@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h1>
-                <i class="fas fa-screwdriver"></i>Crear CDA
+                <i class="fas fa-screwdriver"></i> Crear CDA
             </h1>
             <hr>
               

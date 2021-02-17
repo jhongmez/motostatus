@@ -33,13 +33,13 @@
                         <td>{{ $mechanic->name }}</td>
                         <td>{{ $mechanic->description }}</td>
                         <td>
-                            <a href="" class="btn btn-sm btn-motostatus-info">
+                            <a href="{{ url('mechanics/'.$mechanic->id) }}" class="btn btn-sm btn-motostatus-info">
                                 <i class="fa fa-search"></i>
                             </a>
-                            <a href="" class="btn btn-sm btn-motostatus-info">
+                            <a href="{{ url('mechanics/'.$mechanic->id.'/edit') }}" class="btn btn-sm btn-motostatus-info">
                                 <i class="fa fa-pen"></i>
                             </a>
-                            <form action="" method="POST" class="d-inline">
+                            <form action="{{ url('mechanics/'.$mechanic->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('delete')
                                 <button type="button" class="btn btn-sm btn-link btn-delete">
