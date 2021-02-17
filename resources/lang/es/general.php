@@ -19,13 +19,16 @@ return [
 
     'name-brakes'       => 'Frenos',
     'name-cda'          => 'CDA',
+    'name-oil'          => 'Aceite',
     'description'       => 'Descripcion',
     'active'            => 'Activo',
     'inactive'          => 'Inactivo',
     'create-brakes'     => 'Crear frenos',
     'create-cda'        => 'Crear CDA',
+    'create-oil'        => 'Crear aceite',
     'edit-brake'        => 'Editar frenos',
     'edit-cda'          => 'Editar CDA',
+    'edit-oil'          => 'Editar aceite',
 
 
 ];

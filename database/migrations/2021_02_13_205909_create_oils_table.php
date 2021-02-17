@@ -15,12 +15,12 @@ class CreateOilsTable extends Migration
     {
         Schema::create('oils', function (Blueprint $table) {
             $table->id();
-
+            
             // Campos
             $table->string('name');
             $table->text('description');
             $table->boolean('activo')->default(1);
-            
+
             $table->timestamps();
         });
     }
