@@ -28,7 +28,7 @@ class MotorcycleRequest extends FormRequest
             return [
                 'user_id'           => 'required',
                 'brand_id'          => 'required',
-                'nameMotorcycle'    => 'required|nameMotorcycle,'.$this->id,
+                'nameMotorcycle'    => 'required',
                 'cc'                => 'required',
                 'model'             => 'required',
                 'soat_id'           => 'required',
@@ -36,13 +36,13 @@ class MotorcycleRequest extends FormRequest
                 'taxes'             => 'required',
                 'taxesDate'         => 'required',
                 'mechanic_id'       => 'required',
-                'mechanicsDate'      => 'required',
+                'mechanicsDate'     => 'required',
                 'tire_id'           => 'required',
                 'tiresDate'         => 'required',
                 'brake_id'          => 'required',
                 'brakesDate'        => 'required',
                 'oil_id'            => 'required',
-                'oilDate'           => 'required',
+                'oilsDate'          => 'required',
             ];
 
         } else {
