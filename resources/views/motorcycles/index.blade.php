@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-6">
             <h1>
-                <i class="fas fa-tint"></i> Lista de Motocicletas
+                <i class="fas fa-motorcycle"></i> Lista de Motocicletas
             </h1>
 
             <hr>
