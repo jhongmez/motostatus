@@ -22,18 +22,24 @@ return [
     'name-oil'          => 'Aceite',
     'name-soat'         => 'Soat',
     'name-tire'         => 'Llanta',
+    'name-brand'        => 'Marca',
+    
     'description'       => 'Descripcion',
     'active'            => 'Activo',
     'inactive'          => 'Inactivo',
+
     'create-brakes'     => 'Crear frenos',
     'create-cda'        => 'Crear CDA',
     'create-oil'        => 'Crear aceite',
     'create-soat'       => 'Crear soat',
     'create-tire'       => 'Crear llanta',
+    'create-brand'      => 'Crear marca',
+
     'edit-brake'        => 'Editar frenos',
     'edit-cda'          => 'Editar CDA',
     'edit-oil'          => 'Editar aceite',
     'edit-soat'         => 'Editar soat',
     'edit-tire'         => 'Editar llanta',
+    'edit-brand'        => 'Editar marca',
 
 ];

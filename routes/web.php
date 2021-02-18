@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resources([
     'users'          => 'UserController',
     'brakes'         => 'BrakeController',
-    // 'brands'         => 'BrandController',
+    'brands'         => 'BrandController',
     'mechanics'      => 'MechanicController',
     'oils'           => 'OilController',
     'soats'          => 'SoatController',
