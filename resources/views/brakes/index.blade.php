@@ -11,6 +11,12 @@
             </h1>
 
             <hr>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url('home') }}">Inicio</a></li>
+                </ol>
+            </nav>
             
             <div class="d-flex justify-content-center">
                 <a href="{{ url('brakes/create') }}" class="btn btn-success">

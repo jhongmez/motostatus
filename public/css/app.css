@@ -10956,6 +10956,10 @@ a.text-dark:focus {
   color: #4d375d;
 }
 
+.color-secondary {
+  background-color: #ffe227;
+}
+
 .btn-link {
   background-color: #eb596e;
   color: #FFF;
@@ -10992,5 +10996,24 @@ ul.pagination .page-item.active .page-link {
 
 ul.pagination .page-item .page-link {
   color: #4d375d;
+}
+
+.card-home {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.card-home .link-cards {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #121013;
+  font-weight: bold;
+  font-size: 21px;
+  text-decoration: none;
 }
 

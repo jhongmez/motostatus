@@ -10,6 +10,11 @@
                 <i class="fa fa-users"></i> Lista de usuarios
             </h1>
             <hr>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url('home') }}">Inicio</a></li>
+                </ol>
+            </nav>
             <div class="d-flex justify-content-center">
                 <a href="{{ url('users/create') }}" class="btn btn-success">
                     <i class="fa fa-plus"></i>

@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h1>
-                <i class="fas fa-screwdriver"></i> Consultar Marca
+                <i class="far fa-copyright"></i> Consultar Marca
             </h1>
             <hr>
 
@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item"><a href="{{ url('home') }}">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="{{ url('brands') }}">Marcas</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <i class="fas fa-screwdriver"></i>
+                        <i class="far fa-copyright"></i>
                         Consultar marca
                     </li>
                 </ol>

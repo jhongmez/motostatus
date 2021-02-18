@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h1>
-                <i class="fa fa-pen"></i> Editar freno
+                <i class="fas fa-wrench"></i> Editar freno
             </h1>
             <hr>
 
@@ -16,7 +16,7 @@
                     <li class="breadcrumb-item"><a href="{{ url('home') }}">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="{{ url('brakes') }}">Frenos</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <i class="fa fa-pen"></i>
+                        <i class="fas fa-wrench"></i>
                         Editar freno
                     </li>
                 </ol>
