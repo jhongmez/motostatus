@@ -33,7 +33,7 @@ class Motorcycle extends Model
 
     // Una moto pertenece a un usuario
     public function user() {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User', 'user_id');
     }
 
     // Una moto pertenece a una marca

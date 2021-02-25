@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Motorcycle;
 use App\User;
 use App\Brand;
@@ -24,7 +25,7 @@ class MotorcycleController extends Controller
     public function index()
     {
         //
-        $motorcycles = Motorcycle::all();
+        $motorcycles = Motorcycle::where('user_id', Auth::user()->id)->get();
         //dd($brands);
         return view('motorcycles.index')->with('motorcycles', $motorcycles);
     }
